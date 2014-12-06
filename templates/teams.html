@@ -1,9 +1,9 @@
 <!doctype html>
-<title>Hello from Flask</title>
+<title>Learn 'n Hack - Teams</title>
   {% if teams %}
   <h1>Teams Data</h1>
   {% for team in teams["teams"] %}
-  <p>Team Name: {{ team["name"] }}<br> 
+  <p>Team Name: <a href="http://www.eventbrite.com/teams/{{ team["id"] }}">{{ team["name"] }}</a><br> 
   Creator: {{ team["creator"]["name"] }} 
   </p>
   {% endfor %}
